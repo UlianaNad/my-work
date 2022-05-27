@@ -1,0 +1,520 @@
+body {
+  background-color: #F2F5FA;
+  width: 1314px;
+  margin: 0 auto;
+}
+
+header {
+  height: 89px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  padding-left: 38px;
+  padding-right: 42px;
+}
+header a {
+  text-decoration: none;
+}
+header .my-farm-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 212.94px;
+  height: 48px;
+  background: linear-gradient(270deg, #162970 0%, #255390 99.28%);
+  box-shadow: 0px 8px 10px rgba(60, 84, 117, 0.15);
+  border-radius: 5px;
+  font-family: "Roboto";
+}
+header .my-farm-button .my-farm-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+header .account-button, header .settings-button, header .help-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 212.94px;
+  height: 49px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  font-family: "Roboto";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+header .account-button .img, header .settings-button .img, header .help-button .img {
+  width: 21px;
+  height: 21px;
+  padding-right: 5px;
+}
+header .user-block {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+header .user-block .user-name {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.block-wallet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  padding: 15px 0px 15px 0px;
+}
+.block-wallet .my-farm-wallet {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.block-wallet .my-farm-wallet, .block-wallet .ltc-block-wallet, .block-wallet .btc-block-wallet, .block-wallet .eth-block-wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-wallet .my-farm-wallet .img-wallet, .block-wallet .my-farm-wallet .text, .block-wallet .my-farm-wallet .amount, .block-wallet .ltc-block-wallet .img-wallet, .block-wallet .ltc-block-wallet .text, .block-wallet .ltc-block-wallet .amount, .block-wallet .btc-block-wallet .img-wallet, .block-wallet .btc-block-wallet .text, .block-wallet .btc-block-wallet .amount, .block-wallet .eth-block-wallet .img-wallet, .block-wallet .eth-block-wallet .text, .block-wallet .eth-block-wallet .amount {
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.block-wallet .my-farm-wallet .amount, .block-wallet .ltc-block-wallet .amount, .block-wallet .btc-block-wallet .amount, .block-wallet .eth-block-wallet .amount {
+  font-size: 25px;
+  opacity: 0.3;
+}
+.block-wallet .my-farm-wallet .text, .block-wallet .ltc-block-wallet .text, .block-wallet .btc-block-wallet .text, .block-wallet .eth-block-wallet .text {
+  font-size: 18px;
+  opacity: 0.3;
+}
+.block-wallet .add-currancy {
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 187px;
+  height: 40px;
+  background: linear-gradient(270deg, #162970 0%, #255390 99.28%);
+  box-shadow: 0px 8px 10px rgba(60, 84, 117, 0.15);
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+.block-wallet .add-currancy .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+.all-curencies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-content: center;
+  justify-items: center;
+}
+.all-curencies .block-sum {
+  grid-column: 1;
+  grid-row: 1;
+}
+.all-curencies .block-litecoin {
+  grid-column: 2;
+  grid-row: 1;
+}
+.all-curencies .block-bitcoin {
+  grid-column: 3;
+  grid-row: 1;
+}
+.all-curencies .block-ethereum {
+  grid-column: 4;
+  grid-row: 1;
+}
+.all-curencies .button-block {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.all-curencies .autobuy-button1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.all-curencies .autobuy-button2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.all-curencies .autobuy-button3 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.all-curencies .block-dash {
+  grid-column: 1;
+  grid-row: 3;
+}
+.all-curencies .block-monero {
+  grid-column: 2;
+  grid-row: 3;
+}
+.all-curencies .autobuy-button4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.all-curencies .autobuy-button5 {
+  grid-column: 2;
+  grid-row: 4;
+}
+.all-curencies .block-sum {
+  border: 1px solid #F2AE4B;
+}
+.all-curencies .block-sum, .all-curencies .block-litecoin, .all-curencies .block-bitcoin, .all-curencies .block-ethereum, .all-curencies .block-dash, .all-curencies .block-monero {
+  position: relative;
+  width: 290px;
+  height: 113px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.all-curencies .block-sum .block-sum, .all-curencies .block-litecoin .block-sum, .all-curencies .block-bitcoin .block-sum, .all-curencies .block-ethereum .block-sum, .all-curencies .block-dash .block-sum, .all-curencies .block-monero .block-sum {
+  border: 1px solid #F2AE4B;
+}
+.all-curencies .block-sum .text-area, .all-curencies .block-litecoin .text-area, .all-curencies .block-bitcoin .text-area, .all-curencies .block-ethereum .text-area, .all-curencies .block-dash .text-area, .all-curencies .block-monero .text-area {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  padding-bottom: 10px;
+}
+.all-curencies .block-sum .btc-amount, .all-curencies .block-litecoin .btc-amount, .all-curencies .block-bitcoin .btc-amount, .all-curencies .block-ethereum .btc-amount, .all-curencies .block-dash .btc-amount, .all-curencies .block-monero .btc-amount {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.all-curencies .block-sum .sum-balance-amount, .all-curencies .block-litecoin .sum-balance-amount, .all-curencies .block-bitcoin .sum-balance-amount, .all-curencies .block-ethereum .sum-balance-amount, .all-curencies .block-dash .sum-balance-amount, .all-curencies .block-monero .sum-balance-amount {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+  padding-bottom: 10px;
+}
+.all-curencies .block-sum .question-sign, .all-curencies .block-sum .curency-sign, .all-curencies .block-litecoin .question-sign, .all-curencies .block-litecoin .curency-sign, .all-curencies .block-bitcoin .question-sign, .all-curencies .block-bitcoin .curency-sign, .all-curencies .block-ethereum .question-sign, .all-curencies .block-ethereum .curency-sign, .all-curencies .block-dash .question-sign, .all-curencies .block-dash .curency-sign, .all-curencies .block-monero .question-sign, .all-curencies .block-monero .curency-sign {
+  box-sizing: border-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 19px;
+  top: 15px;
+}
+.all-curencies .block-sum .speed-line, .all-curencies .block-litecoin .speed-line, .all-curencies .block-bitcoin .speed-line, .all-curencies .block-ethereum .speed-line, .all-curencies .block-dash .speed-line, .all-curencies .block-monero .speed-line {
+  position: absolute;
+  right: 23px;
+  top: 54px;
+}
+.all-curencies .autobuy-button1, .all-curencies .autobuy-button2, .all-curencies .autobuy-button3, .all-curencies .autobuy-button4, .all-curencies .autobuy-button5 {
+  box-sizing: border-box;
+  width: 290px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-curencies .text-block {
+  display: flex;
+}
+.all-curencies .text-block .text-big {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.all-curencies .text-block .text-little {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+.all-curencies .button-block .binance-button {
+  box-sizing: border-box;
+  width: 143px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 2px solid #F3BA2F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+}
+.all-curencies .button-block .buysell-button {
+  width: 138px;
+  height: 36px;
+  background: #00D56E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-situation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 37px;
+  padding-top: 39px;
+}
+.current-situation .sum-balance, .current-situation .income, .current-situation .service {
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: 45px;
+}
+.current-situation .sum-balance .text, .current-situation .income .text, .current-situation .service .text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.current-situation .sum-balance .block-number, .current-situation .income .block-number, .current-situation .service .block-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+}
+.current-situation .sum-balance .block-number .number, .current-situation .income .block-number .number, .current-situation .service .block-number .number {
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.current-situation .sum-balance .block-number .number-text, .current-situation .income .block-number .number-text, .current-situation .service .block-number .number-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #4F4F4F;
+}
+
+.statistic-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-top: 10px;
+}
+.statistic-container .income-balance {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 152px;
+  height: 18px;
+  margin-left: 30px;
+}
+.statistic-container .income-balance .img-table {
+  width: 915px;
+  height: 289px;
+  margin-top: 9px;
+}
+.statistic-container .income-balance .text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #828282;
+}
+.statistic-container .forcast-income {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  align-items: center;
+}
+.statistic-container .forcast-income .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+.statistic-container .forcast-income .question-svg {
+  box-sizing: border-box;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 1348px;
+  top: 615px;
+}
+.statistic-container .forcast-table {
+  width: 303px;
+  height: 289.02px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+}
+.statistic-container .forcast-table .time {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BDBDBD;
+  margin-bottom: 10px;
+}
+.statistic-container .forcast-table .result {
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4F4F4F;
+  margin-bottom: 10px;
+}
+.statistic-container .account-statistic-block {
+  padding-left: 30px;
+  padding-top: 15px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.statistic-container .account-statistic-block .text-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #828282;
+  padding-top: 15px;
+}
+.statistic-container .buttons-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.statistic-container .buttons-block .name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name1 {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  color: #255390;
+  width: 71px;
+  height: 41px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name2 {
+  width: 111px;
+  height: 41px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name3 {
+  box-sizing: border-box;
+  width: 137px;
+  height: 41px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name4 {
+  box-sizing: border-box;
+  width: 110px;
+  height: 41px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name5 {
+  box-sizing: border-box;
+  width: 143px;
+  height: 41px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+.statistic-container .buttons-block .name6 {
+  box-sizing: border-box;
+  width: 121px;
+  height: 41px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,569 @@
+body {
+    background-color: #F2F5FA;
+    width: 1314px;
+    margin: 0 auto;
+}
+
+header {
+    height: 89px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding-left: 38px;
+    padding-right: 42px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .my-farm-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 212.94px;
+        height: 48px;
+        background: linear-gradient(270deg, #162970 0%, #255390 99.28%);
+        box-shadow: 0px 8px 10px rgba(60, 84, 117, 0.15);
+        border-radius: 5px;
+        font-family: 'Roboto';
+        
+
+        .my-farm-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+    
+        }
+    }
+    .account-button, .settings-button, .help-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 212.94px;
+        height: 49px;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        border-radius: 5px;
+        font-family: 'Roboto';
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+
+        .img {
+            width: 21px;
+            height: 21px;
+            padding-right: 5px;
+        }
+
+    }
+    .user-block {
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        .user-name{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    
+}
+.block-wallet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    padding: 15px 0px 15px 0px;
+
+    .my-farm-wallet {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+    .my-farm-wallet, .ltc-block-wallet, .btc-block-wallet, .eth-block-wallet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        .img-wallet, .text, .amount{
+        padding-left: 5px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+        
+        }
+        .amount{
+            font-size: 25px;
+            opacity: 0.3;
+        }
+        .text{
+            font-size: 18px;
+            opacity: 0.3;
+        }
+    }
+    .add-currancy {
+        justify-self: end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 187px;
+        height: 40px;
+        background: linear-gradient(270deg, #162970 0%, #255390 99.28%);
+        box-shadow: 0px 8px 10px rgba(60, 84, 117, 0.15);
+        border-radius: 20px;
+        color: #FFFFFF;
+       
+        .text{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            padding-left: 3px;
+        }
+    }
+}
+.all-curencies{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    align-content: center;
+    justify-items: center;
+
+    .block-sum{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .block-litecoin{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .block-bitcoin{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .block-ethereum{
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .button-block{
+        grid-column: 1;
+        grid-row: 2;
+        display:flex;
+        justify-content: space-between;
+
+    }
+    .autobuy-button1{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .autobuy-button2{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .autobuy-button3{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .block-dash{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .block-monero{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .autobuy-button4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .autobuy-button5{
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+
+    .block-sum{
+        border: 1px solid #F2AE4B;
+        } 
+    .block-sum, .block-litecoin, .block-bitcoin, .block-ethereum, .block-dash, .block-monero {
+        position: relative;
+        width: 290px;
+        height: 113px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        font-family: 'Roboto';
+        font-style: normal;
+        padding-top:15px ;
+        padding-left: 25px;
+        
+
+    .block-sum{
+        border: 1px solid #F2AE4B;
+        }   
+
+        .text-area{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #828282;
+            padding-bottom: 10px;
+        }
+        .btc-amount{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000; 
+            padding-bottom: 10px;
+        }
+        .sum-balance-amount{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: #4F4F4F;
+            padding-bottom: 10px;
+        }
+        .question-sign, .curency-sign{
+            box-sizing: border-box;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 19px;
+            top: 15px;
+        }
+        .speed-line{
+            position: absolute;
+            
+            right: 23px;
+            top: 54px;
+        }
+
+    
+    }
+    .autobuy-button1, .autobuy-button2, .autobuy-button3, .autobuy-button4, .autobuy-button5{
+        box-sizing: border-box; 
+        width: 290px;
+        height: 36px;
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .text-block{
+        display: flex;
+
+        .text-big{ 
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px; 
+        color: #4F4F4F;
+        padding-left: 7px;
+        padding-right: 7px;
+        }
+        .text-little{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #828282;
+        }
+    }
+    .button-block{
+        
+        .binance-button{
+            box-sizing: border-box;
+            width: 143px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 2px solid #F3BA2F;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 9px;
+        }
+        .buysell-button{
+            width: 138px;
+            height: 36px;
+            background: #00D56E;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.current-situation{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding-left: 37px;
+    padding-top: 39px;
+
+    .sum-balance, .income, .service{
+        font-family: 'Roboto';
+        font-style: normal;
+        margin-right: 45px;
+
+        .text{
+            font-size: 14px;
+            line-height: 16px;
+            color: #828282; 
+        }
+        .block-number{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            .number{
+                font-size: 25px;
+                line-height: 29px;
+                color: #000000;  
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .number-text{
+                font-size: 12px;
+                line-height: 14px;
+                color: #4F4F4F;
+            }
+
+        }
+
+    }
+}
+.statistic-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-top: 10px;
+
+
+    .income-balance{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 152px;
+        height: 18px;
+        margin-left: 30px;
+        
+
+        .img-table{
+            width: 915px;
+            height: 289px;
+            margin-top: 9px;
+        }
+        .text{
+            
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #828282;
+        }
+    }
+    .forcast-income{
+        grid-column-start: 4;
+        grid-column-end: 4;
+        align-items: center;
+       
+        
+        .text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #828282;
+            margin-bottom: 10px;
+
+        }
+        .question-svg{
+            box-sizing: border-box;
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            left: 1348px;
+            top: 615px;
+        }
+    }
+    .forcast-table{
+        
+        width: 303px;
+        height: 289.02px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        
+        .time{
+            padding-top: 10px;
+            padding-left: 15px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: #BDBDBD;
+            margin-bottom: 10px;
+        }
+        .result{
+            align-items: center;
+            justify-content: center;
+            padding-left: 15px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #4F4F4F;
+            margin-bottom: 10px;
+        }
+    }
+
+    .account-statistic-block{
+        padding-left: 30px;
+        padding-top: 15px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        .text-name{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #828282;
+            padding-top: 15px;
+        }
+        
+    }
+    .buttons-block{
+           
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+
+        .name{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .name1{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            color: #255390;
+            width: 71px;
+            height: 41px;
+           
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            
+        }
+        .name2 {
+           
+            width: 111px;
+            height: 41px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .name3 {
+            box-sizing: border-box;
+            width: 137px;
+            height: 41px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .name4 {
+            box-sizing: border-box;
+            width: 110px;
+            height: 41px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .name5 {
+            box-sizing: border-box;
+            width: 143px;
+            height: 41px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .name6 {
+            box-sizing: border-box;
+            width: 121px;
+            height: 41px;
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+    }
+}
