@@ -376,7 +376,14 @@ header .user-block .user-name {
   grid-column-end: 4;
   align-items: center;
 }
-.statistic-container .forcast-income .text {
+.statistic-container .forcast-income .forcast-income-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+.statistic-container .forcast-income .forcast-income-name .text {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -384,13 +391,10 @@ header .user-block .user-name {
   color: #828282;
   margin-bottom: 10px;
 }
-.statistic-container .forcast-income .question-svg {
+.statistic-container .forcast-income .forcast-income-name .question-svg {
   box-sizing: border-box;
-  position: absolute;
   width: 21px;
   height: 21px;
-  left: 1348px;
-  top: 615px;
 }
 .statistic-container .forcast-table {
   width: 303px;
@@ -422,7 +426,7 @@ header .user-block .user-name {
   padding-left: 30px;
   padding-top: 15px;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 .statistic-container .account-statistic-block .text-name {
   font-family: "Roboto";
@@ -436,8 +440,6 @@ header .user-block .user-name {
 .statistic-container .buttons-block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
 }
 .statistic-container .buttons-block .name {
   font-family: "Roboto";
@@ -458,6 +460,9 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic-container .buttons-block .name2 {
   width: 111px;
@@ -469,6 +474,9 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic-container .buttons-block .name3 {
   box-sizing: border-box;
@@ -481,6 +489,9 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic-container .buttons-block .name4 {
   box-sizing: border-box;
@@ -493,6 +504,9 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic-container .buttons-block .name5 {
   box-sizing: border-box;
@@ -505,6 +519,9 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic-container .buttons-block .name6 {
   box-sizing: border-box;
@@ -517,4 +534,15 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statistic-container .statistic-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.statistic-container .statistic-table .column-name {
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */

@@ -409,24 +409,28 @@ header {
         grid-column-start: 4;
         grid-column-end: 4;
         align-items: center;
-       
-        
-        .text{
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-            color: #828282;
-            margin-bottom: 10px;
 
-        }
-        .question-svg{
-            box-sizing: border-box;
-            position: absolute;
-            width: 21px;
-            height: 21px;
-            left: 1348px;
-            top: 615px;
+        .forcast-income-name{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 20px;
+       
+            .text{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #828282;
+                margin-bottom: 10px;
+
+            }
+            .question-svg{
+                box-sizing: border-box;
+                width: 21px;
+                height: 21px;
+            }
         }
     }
     .forcast-table{
@@ -462,7 +466,7 @@ header {
         padding-left: 30px;
         padding-top: 15px;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
 
         .text-name{
             font-family: 'Roboto';
@@ -476,11 +480,8 @@ header {
         
     }
     .buttons-block{
-           
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 15px;
+       display: flex;
+       justify-content: space-between;
 
         .name{
             font-family: 'Roboto';
@@ -488,6 +489,7 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            
         }
         .name1{
             background: #FFFFFF;
@@ -496,12 +498,14 @@ header {
             color: #255390;
             width: 71px;
             height: 41px;
-           
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
         }
         .name2 {
@@ -515,6 +519,9 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .name3 {
             box-sizing: border-box;
@@ -527,6 +534,9 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .name4 {
             box-sizing: border-box;
@@ -539,6 +549,9 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .name5 {
             box-sizing: border-box;
@@ -551,6 +564,9 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .name6 {
             box-sizing: border-box;
@@ -563,7 +579,20 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+    }
+    .statistic-table{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        .column-name{
+            padding-top: 15px;
+          
+        }
     }
 }
