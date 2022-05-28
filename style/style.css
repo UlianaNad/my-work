@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F5FA;
+  background: #F2F5FA;
   width: 1314px;
   margin: 0 auto;
 }
@@ -143,7 +143,7 @@ header .user-block .user-name {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-gap: 15px;
   align-content: center;
   justify-items: center;
 }
@@ -439,7 +439,6 @@ header .user-block .user-name {
 }
 .statistic-container .buttons-block {
   display: flex;
-  justify-content: space-between;
 }
 .statistic-container .buttons-block .name {
   font-family: "Roboto";
@@ -447,6 +446,7 @@ header .user-block .user-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name1 {
   background: #FFFFFF;
@@ -463,6 +463,7 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name2 {
   width: 111px;
@@ -477,6 +478,7 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name3 {
   box-sizing: border-box;
@@ -492,6 +494,7 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name4 {
   box-sizing: border-box;
@@ -507,6 +510,7 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name5 {
   box-sizing: border-box;
@@ -522,6 +526,7 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .buttons-block .name6 {
   box-sizing: border-box;
@@ -537,12 +542,244 @@ header .user-block .user-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
 }
 .statistic-container .statistic-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 915px;
+  height: 213px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-right: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-.statistic-container .statistic-table .column-name {
-  padding-top: 15px;
+.statistic-container .statistic-table .line, .statistic-container .statistic-table .line2 {
+  width: 862px;
+  height: 0px;
+  opacity: 0.3;
+  border: 1px solid #828282;
+  margin-left: 32px;
+}
+.statistic-container .statistic-table .line {
+  position: absolute;
+  bottom: 122px;
+}
+.statistic-container .statistic-table .line2 {
+  position: absolute;
+  bottom: 66px;
+}
+.statistic-container .statistic-table .tarif-column {
+  font-family: "Roboto";
+  font-style: normal;
+  padding-left: 31px;
+}
+.statistic-container .statistic-table .tarif-column .tarif {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #828282;
+  padding-top: 25px;
+  padding-bottom: 22px;
+}
+.statistic-container .statistic-table .tarif-column .tarif-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #255390;
+  padding-bottom: 36px;
+}
+.statistic-container .statistic-table .activity-column {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: -85px;
+}
+.statistic-container .statistic-table .activity-column .activity-inf1 {
+  color: #219653;
+  padding-top: 64px;
+  padding-bottom: 38px;
+}
+.statistic-container .statistic-table .activity-column .activity-inf2 {
+  color: #F2994A;
+  padding-bottom: 38px;
+}
+.statistic-container .statistic-table .date-column {
+  font-family: "Roboto";
+  font-style: normal;
+}
+.statistic-container .statistic-table .date-column .date {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #828282;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.statistic-container .statistic-table .date-column .date-inf {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F4F4F;
+  padding-bottom: 38px;
+}
+.statistic-container .statistic-table .time-column {
+  font-family: "Roboto";
+  font-style: normal;
+}
+.statistic-container .statistic-table .time-column .time {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #828282;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.statistic-container .statistic-table .time-column .time-inf {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F4F4F;
+  padding-bottom: 38px;
+}
+.statistic-container .statistic-table .sum-column {
+  font-family: "Roboto";
+  font-style: normal;
+}
+.statistic-container .statistic-table .sum-column .sum {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #828282;
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+.statistic-container .statistic-table .sum-column .sum-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+.statistic-container .statistic-table .sum-column .sum-flex .sum-amount {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4F4F4F;
+  padding-left: 5px;
+}
+.statistic-container .statistic-table .sum-column .sum-flex .sum-end {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  padding-left: 30px;
+}
+.statistic-container .my-contract-block {
+  font-family: "Roboto";
+  font-style: normal;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  margin-top: 32px;
+  position: relative;
+}
+.statistic-container .my-contract-block .block-name {
+  padding: 9px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #828282;
+}
+.statistic-container .my-contract-block .inf-block {
+  width: 303px;
+  height: 66px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.statistic-container .my-contract-block .inf-block .btc {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.statistic-container .my-contract-block .inf-block .btc .custom-btc {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+  margin: 10px;
+}
+.statistic-container .my-contract-block .inf-block .btc .speed {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #4F4F4F;
+}
+.statistic-container .my-contract-block .inf-block .activity-line {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.statistic-container .my-contract-block .inf-block .activity-line .act {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #219653;
+  opacity: 0.7;
+}
+.statistic-container .my-contract-block .inf-block .activity-line .dates {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #4F4F4F;
+  opacity: 0.7;
+}
+.statistic-container .my-contract-block .inf-block .activity-line .act2 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #F2994A;
+  opacity: 0.7;
+}
+.statistic-container .my-contract-block .show-all {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 187px;
+  height: 33px;
+  background: #FFFFFF;
+  border: 0.5px solid #E0E0E0;
+  border-radius: 20px;
+  left: 55px;
+}
+.statistic-container .my-contract-block .show-all .text {
+  padding-left: 5px;
+}
+
+.account-statistic-block .text-name {
+  padding-bottom: 14px;
 }/*# sourceMappingURL=style.css.map */

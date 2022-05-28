@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F5FA;
+    background: #F2F5FA;
     width: 1314px;
     margin: 0 auto;
 }
@@ -156,9 +156,11 @@ header {
     
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
     align-content: center;
     justify-items: center;
+    
+
 
     .block-sum{
         grid-column: 1;
@@ -481,7 +483,7 @@ header {
     }
     .buttons-block{
        display: flex;
-       justify-content: space-between;
+      
 
         .name{
             font-family: 'Roboto';
@@ -489,6 +491,7 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 20px;
+            margin-right: 32px;
             
         }
         .name1{
@@ -506,6 +509,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
             
         }
         .name2 {
@@ -522,6 +526,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
         }
         .name3 {
             box-sizing: border-box;
@@ -537,6 +542,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
         }
         .name4 {
             box-sizing: border-box;
@@ -552,6 +558,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
         }
         .name5 {
             box-sizing: border-box;
@@ -567,6 +574,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
         }
         .name6 {
             box-sizing: border-box;
@@ -582,17 +590,271 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 32px;
         }
 
     }
     .statistic-table{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 915px;
+        height: 213px; 
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+        border-radius: 5px; 
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-right: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
 
-        .column-name{
-            padding-top: 15px;
-          
+        .line, .line2{
+            width: 862px;
+            height: 0px;
+            opacity: 0.3;
+            border: 1px solid #828282;
+            margin-left: 32px;
+            
         }
+        .line{
+            position: absolute;
+            bottom: 122px;
+    
+        }
+        .line2{
+            position: absolute;
+            bottom: 66px;
+    
+        }
+
+        .tarif-column{
+            font-family: 'Roboto';
+            font-style: normal;
+            padding-left: 31px;
+            
+            .tarif{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #828282;
+                padding-top: 25px;
+                padding-bottom: 22px;
+            }
+            .tarif-name{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: #255390;  
+                padding-bottom: 36px;
+            }
+        }
+        .activity-column{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            margin-left: -85px;
+
+            .activity-inf1{
+                color: #219653;
+                padding-top: 64px;
+                padding-bottom: 38px;
+            }
+            .activity-inf2{
+                color: #F2994A;;
+                padding-bottom: 38px;
+            }
+        }
+        .date-column{
+            font-family: 'Roboto';
+            font-style: normal;
+            
+            .date{ 
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #828282;
+                padding-top: 25px;
+                padding-bottom: 20px;
+            }
+            .date-inf{
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: #4F4F4F;
+                padding-bottom: 38px;
+            }
+        }
+        .time-column{
+            font-family: 'Roboto';
+            font-style: normal;
+            .time{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;     
+                color: #828282;  
+                padding-top: 25px;
+                padding-bottom: 20px;
+            }
+            .time-inf{
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: #4F4F4F;
+                padding-bottom: 38px;
+            }
+        }
+        .sum-column{
+            font-family: 'Roboto';
+            font-style: normal;
+           
+            .sum{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #828282;
+                padding-top: 25px;
+                padding-bottom: 18px;
+            }
+            .sum-flex{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 34px;
+
+                .sum-amount{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #4F4F4F;
+                    padding-left: 5px;
+
+                }
+                .sum-end{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #828282;
+                    padding-left: 30px;
+                }
+            }
+        }
+        
+    }
+    .my-contract-block{
+        font-family: 'Roboto';    
+        font-style: normal;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        margin-top: 32px;
+        position: relative;
+
+            .block-name{
+                padding: 9px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #828282;
+            }
+        .inf-block{
+            
+            width: 303px;
+            height: 66px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            margin-bottom: 15px;
+
+            .btc{
+              
+                display: flex;
+                justify-content: space-between;
+                margin-right: 10px;
+                .custom-btc{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;   
+                    color: #4F4F4F; 
+                    margin: 10px;
+                }
+                .speed{
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    color: #4F4F4F;
+                    
+                }
+
+            }
+            .activity-line{
+                
+                margin-left: 10px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: space-between;
+                .act{
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: center;
+                    color: #219653;
+                    opacity: 0.7;
+                }
+                .dates{
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    color: #4F4F4F;
+                    opacity: 0.7;
+                }
+                .act2{
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: center;
+                    color: #F2994A;
+                    opacity: 0.7;
+                }
+            }
+            
+
+        }
+        .show-all{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            position: absolute;
+            width: 187px;
+            height: 33px;
+            background: #FFFFFF;
+            border: 0.5px solid #E0E0E0;
+            border-radius: 20px;
+            left: 55px;
+            .text{
+                padding-left: 5px;
+            }
+        }
+    } 
+}
+.account-statistic-block{
+
+    .text-name{
+        padding-bottom: 14px;
     }
 }
+
